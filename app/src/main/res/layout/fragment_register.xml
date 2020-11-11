@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/edtxtEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/edtxtPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtxtRepeatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repeat_password"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="@string/register"
+        android:textColor="@color/branco"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/roboto">
+
+    </Button>
+
+</LinearLayout>
