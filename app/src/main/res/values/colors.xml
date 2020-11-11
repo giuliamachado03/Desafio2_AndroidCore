@@ -6,4 +6,5 @@
     <color name="branco">#fff</color>
     <color name="preto">#000</color>
     <color name="cinzaRegister">#8492A6</color>
+    <color name="cinzaTexto">#5A6978</color>
 </resources>

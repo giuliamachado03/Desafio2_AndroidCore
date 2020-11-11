@@ -5,16 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-
-
-class RestaurantesFragment : Fragment() {
+class PratosRestauranteFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
         }
     }
 
@@ -23,14 +18,7 @@ class RestaurantesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_restaurantes, container, false);
-
-
-
-
-
+        return inflater.inflate(R.layout.fragment_pratos_restaurante, container, false)
     }
 
-
 }
-

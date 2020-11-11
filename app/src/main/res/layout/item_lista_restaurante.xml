@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -33,6 +34,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tony_romas"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/roboto"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     />
                 <TextView
@@ -40,17 +43,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/endereco_tony"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/roboto"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary"
-                    />
+                    android:textColor="@color/cinzaRegister"
+                    tools:ignore="SmallSp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:text="@string/horario_fechamento"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/roboto"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary"
-                    />
+                    android:textColor="@color/cinzaRegister"
+                    tools:ignore="SmallSp" />
 
             </LinearLayout>
 

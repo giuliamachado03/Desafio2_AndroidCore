@@ -10,7 +10,9 @@
     <string name="name">Name</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="repeat_password">Repeat Password</string>
-    <string name="tony_romas">Tony Romas</string>
+    <string name="tony_romas">Tony Roma\'s</string>
     <string name="endereco_tony">Av. Lavandisca, 717 - Indianópolis, São Paulo</string>
     <string name="horario_fechamento">Fecha às 22:00</string>
+    <string name="salada_com_molho_gengibre">Salada com molho gengibre</string>
+    <string name="pratos_principais">Pratos principais</string>
 </resources>
