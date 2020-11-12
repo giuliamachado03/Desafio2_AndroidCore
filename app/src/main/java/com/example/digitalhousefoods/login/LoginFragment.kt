@@ -1,15 +1,14 @@
-package com.example.digitalhousefoods
+package com.example.digitalhousefoods.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.digitalhousefoods.R
 
+class LoginFragment : Fragment() {
 
-class RestaurantesFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,14 +22,8 @@ class RestaurantesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_restaurantes, container, false);
-
-
-
-
-
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
 
 }
-

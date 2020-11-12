@@ -1,11 +1,14 @@
-package com.example.digitalhousefoods
+package com.example.digitalhousefoods.detalhe_prato
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-class PratosRestauranteFragment : Fragment() {
+import com.example.digitalhousefoods.R
+
+class DetalhePratoFragment : Fragment() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +21,7 @@ class PratosRestauranteFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pratos_restaurante, container, false)
+        return inflater.inflate(R.layout.fragment_prato, container, false)
     }
 
 }
