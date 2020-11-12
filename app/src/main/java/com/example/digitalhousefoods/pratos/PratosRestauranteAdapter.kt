@@ -1,10 +1,9 @@
-package com.example.digitalhousefoods
+package com.example.digitalhousefoods.pratos
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.digitalhousefoods.pratos.Prato
-import com.example.digitalhousefoods.pratos.PratosRestauranteViewHolder
+import com.example.digitalhousefoods.R
 
 class PratosRestauranteAdapter(
     private val dataset: List<Prato>,
