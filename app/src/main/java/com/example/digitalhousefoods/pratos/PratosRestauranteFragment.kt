@@ -23,4 +23,5 @@ class PratosRestauranteFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_pratos_restaurante, container, false)
     }
 
+
 }

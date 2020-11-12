@@ -11,9 +11,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
-    fun criarLista (prato: Prato){
-        val recyclerView = findViewById<RecyclerView>(R.id.listaPratos)
-        val manager = GridLayoutManager(this, 2)
-    }
 }
