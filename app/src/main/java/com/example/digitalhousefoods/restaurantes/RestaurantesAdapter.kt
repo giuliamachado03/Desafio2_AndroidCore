@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
 
 class RestaurantesAdapter(
-    private val dataset: MutableList<Restaurante>, private val listener: (Restaurante) -> Unit
+    private val dataset: List<Restaurante>
 ) : RecyclerView.Adapter<RestaurantesAdapter.MeuViewHolder>() {
 
     class MeuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -49,8 +49,6 @@ class RestaurantesAdapter(
     override fun onBindViewHolder(holder: MeuViewHolder, position: Int) {
         val item = dataset[position]
         holder.bind(dataset[position])
-        holder.itemView.setOnClickListener {
-        }
     }
 
     override fun getItemCount() = dataset.size
