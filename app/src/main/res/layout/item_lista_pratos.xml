@@ -21,6 +21,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/imagePrato"
             android:layout_width="match_parent"
             android:layout_height="194dp"
             android:src="@drawable/prato"
@@ -28,7 +29,6 @@
             />
 
         <LinearLayout
-            android:id="@+id/imagePrato"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

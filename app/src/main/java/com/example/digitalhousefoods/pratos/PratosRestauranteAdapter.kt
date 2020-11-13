@@ -1,27 +1,45 @@
 package com.example.digitalhousefoods.pratos
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
+import com.example.digitalhousefoods.restaurantes.Restaurante
+import com.example.digitalhousefoods.restaurantes.RestaurantesAdapter
 
-class PratosRestauranteAdapter(
-    private val dataset: List<Prato>,
-    private val listener: (Prato) -> Unit
-) : RecyclerView.Adapter<PratosRestauranteViewHolder>() {
+class PratosRestauranteAdapter(private val dataset: List<Prato>) :
+    RecyclerView.Adapter<PratosRestauranteAdapter.MeuViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PratosRestauranteViewHolder {
+    class MeuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_lista_pratos, parent, false)
-        return PratosRestauranteViewHolder(view)
+        private val imagem_prato by lazy {
+            view.findViewById(R.id.imagePrato) as ImageView
+        }
+
+        private val nome_prato by lazy {
+            view.findViewById(R.id.nomePrato) as TextView
+        }
+
+        fun bind (prato: Prato) {
+
+            imagem_prato.setImageResource(prato.imageId)
+            nome_prato.text = prato.nome
+
+        }
     }
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MeuViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_lista_pratos, parent, false)
 
-    override fun onBindViewHolder(holder: PratosRestauranteViewHolder, position: Int) {
-        val item = dataset[position]
-        holder.bind(item)
-        holder.itemView.setOnClickListener { listener(item) }
+        return MeuViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: MeuViewHolder, position: Int) {
+        holder.bind(dataset[position])
     }
 
     override fun getItemCount() = dataset.size
