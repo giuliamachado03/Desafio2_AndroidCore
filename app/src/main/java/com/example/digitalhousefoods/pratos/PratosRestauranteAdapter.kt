@@ -25,7 +25,7 @@ class PratosRestauranteAdapter(private val dataset: List<Prato>) :
 
         fun bind (prato: Prato) {
 
-            imagem_prato.setImageResource(prato.imageId)
+            imagem_prato.setImageResource(R.drawable.prato)
             nome_prato.text = prato.nome
 
         }
@@ -40,6 +40,7 @@ class PratosRestauranteAdapter(private val dataset: List<Prato>) :
 
     override fun onBindViewHolder(holder: MeuViewHolder, position: Int) {
         holder.bind(dataset[position])
+        val item = dataset[position]
     }
 
     override fun getItemCount() = dataset.size

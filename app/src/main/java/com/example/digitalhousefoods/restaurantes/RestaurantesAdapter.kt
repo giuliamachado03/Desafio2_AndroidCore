@@ -8,7 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
 
-class RestaurantesAdapter(private val dataset: List<Restaurante>) : RecyclerView.Adapter<RestaurantesAdapter.MeuViewHolder>() {
+class RestaurantesAdapter(
+    private val dataset: MutableList<Restaurante>, private val listener: (Restaurante) -> Unit
+) : RecyclerView.Adapter<RestaurantesAdapter.MeuViewHolder>() {
 
     class MeuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -29,7 +31,7 @@ class RestaurantesAdapter(private val dataset: List<Restaurante>) : RecyclerView
         }
 
         fun bind(restaurante: Restaurante) {
-            imagem_restaurante.setImageResource(restaurante.imageId)
+            imagem_restaurante.setImageResource(R.drawable.tony)
             nome_restaurante.text = restaurante.nome
             endereco_restaurante.text = restaurante.endereco
             horario_restaurante.text = restaurante.horarioFunc
@@ -43,10 +45,14 @@ class RestaurantesAdapter(private val dataset: List<Restaurante>) : RecyclerView
 
         return MeuViewHolder(view)
     }
+
     override fun onBindViewHolder(holder: MeuViewHolder, position: Int) {
+        val item = dataset[position]
         holder.bind(dataset[position])
+        holder.itemView.setOnClickListener {
+        }
     }
 
     override fun getItemCount() = dataset.size
 
-    }
+}
